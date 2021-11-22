@@ -29,6 +29,8 @@ map.locate({setView: true, maxZoom: 16});
              "light": light
         }};
 
+L.control.layers(baseMaps).addTo(map);
+
 // object.onclick =
 function onLocationFound(e) {
     var radius = e.accuracy; //this defines a variable radius as the accuracy value returned by the locate method. The unit is meters.
